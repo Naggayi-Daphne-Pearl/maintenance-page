@@ -29,11 +29,13 @@ class MaintenancePage extends React.Component {
           <div style={styles.divider}></div>
 
           <div style={styles.textContainer}>
-            <h1 style={styles.heading}>Website Under Maintenance</h1>
+            <h1 style={styles.textError}>Website Under Maintenance</h1>
+            <h1 style={styles.heading}>Mobiklinic</h1>
+
             <p style={styles.text}>
               We empower low-income community Health Systems with trainings and
               digital tool to ease access to healthcare. At our communities of
-              work, we are using the ITED techniqu
+              work, we are using the ITED techniques.
             </p>
             <p style={styles.text}>
               We're currently undergoing maintenance to improve our website. We
@@ -61,6 +63,7 @@ const styles = {
     padding: "2rem",
     maxWidth: "100vw",
     height: "100vh",
+    backgroundColor: "#F5F7F8",
   },
   contentContainer: {
     display: "flex",
@@ -70,9 +73,10 @@ const styles = {
   },
   textContainer: {
     flex: 1,
-    backgroundColor: "rgba(255, 255, 255, 0.9)",
+    backgroundColor: "#F5F7F8",
     padding: "1rem",
-    width: "100%",
+    width: "90vw",
+    // padding: "1rem 3rem",
     height: "100vh",
   },
   divider: {
@@ -81,7 +85,6 @@ const styles = {
     margin: "0 1rem",
     height: "90%",
     justifyContent: "center",
-
   },
   imageContainer: {
     flex: 1,
@@ -90,30 +93,42 @@ const styles = {
     height: "60vh",
   },
   heading: {
-    fontSize: "24px",
-    fontWeight: "bold",
-    color: "#333",
+    fontSize: "25px",
+    // fontWeight: "bold",
+    color: "#9CA1A6",
     marginBottom: "20px",
     marginTop: "3rem",
-    textAlign: "center",
+    // textAlign: "center",
     fontStyle: "italic",
-    fontFamily: "Poppins, sans-serif",
+    fontFamily: "Georgia, sans-serif",
+  },
+  textError: {
+    fontSize: "25px",
+    // fontWeight: "bold",
+    // color: "red",
+    marginBottom: "20px",
+    marginTop: "3rem",
+    // textAlign: "center",
+    // fontStyle: "italic",
+    fontFamily: "Georgia, sans-serif",
   },
   text: {
     fontSize: "18px",
-    color: "#333", // Changed text color
+    color: "black", // Changed text color
     margin: "10px 0",
-    fontFamily: "Arial, sans-serif", // Changed font family
+    width: "35vw",
+
+    fontFamily: "Georgia, sans-serif", // Changed font family
   },
   image: {
     width: "100%",
-    height: "auto",
+    height: "80vh",
   },
   socialContainer: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center",
+    marginTop: "5rem",
   },
   logo: {
     width: "50px",
