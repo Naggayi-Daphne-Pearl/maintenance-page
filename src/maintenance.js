@@ -25,10 +25,16 @@ class MaintenancePage extends React.Component {
                 <FaLinkedin />
               </a>
             </div>
-            <div style={styles.divider}></div>
           </div>
+          <div style={styles.divider}></div>
+
           <div style={styles.textContainer}>
             <h1 style={styles.heading}>Website Under Maintenance</h1>
+            <p style={styles.text}>
+              We empower low-income community Health Systems with trainings and
+              digital tool to ease access to healthcare. At our communities of
+              work, we are using the ITED techniqu
+            </p>
             <p style={styles.text}>
               We're currently undergoing maintenance to improve our website. We
               expect to be back online soon. Please check back later.
@@ -50,10 +56,10 @@ class MaintenancePage extends React.Component {
 const styles = {
   container: {
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: "20px",
-    maxWidth: "100%",
+    // justifyContent: "center",
+    // alignItems: "center",
+    padding: "2rem",
+    maxWidth: "100vw",
     height: "100vh",
   },
   contentContainer: {
@@ -65,14 +71,17 @@ const styles = {
   textContainer: {
     flex: 1,
     backgroundColor: "rgba(255, 255, 255, 0.9)",
-    padding: "3rem",
+    padding: "1rem",
     width: "100%",
+    height: "100vh",
   },
   divider: {
     width: "2px",
     backgroundColor: "black",
     margin: "0 1rem",
-    display: "block",
+    height: "90%",
+    justifyContent: "center",
+
   },
   imageContainer: {
     flex: 1,
@@ -92,9 +101,9 @@ const styles = {
   },
   text: {
     fontSize: "18px",
-    color: "#666",
+    color: "#333", // Changed text color
     margin: "10px 0",
-    fontFamily: "Poppins, sans-serif",
+    fontFamily: "Arial, sans-serif", // Changed font family
   },
   image: {
     width: "100%",
@@ -104,6 +113,7 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    justifyContent: "center",
   },
   logo: {
     width: "50px",
