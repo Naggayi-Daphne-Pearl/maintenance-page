@@ -113,7 +113,7 @@ const styles = {
     marginTop: "3rem",
     // textAlign: "center",
     fontStyle: "italic",
-    fontFamily: "Georgia, sans-serif",
+    fontFamily: "Merriweather, sans-serif",
   },
   textError: {
     fontSize: "25px",
@@ -123,19 +123,20 @@ const styles = {
     marginTop: "3rem",
     // textAlign: "center",
     // fontStyle: "italic",
-    fontFamily: "Georgia, sans-serif",
+    fontFamily: "Ubuntu Condensed, sans-serif",
   },
   text: {
     fontSize: "18px",
-    color: "black", // Changed text color
+    color: "gray", // Changed text color
     margin: "10px 0",
     width: "35vw",
 
-    fontFamily: "Georgia, sans-serif", // Changed font family
+    fontFamily: "Merriweather, sans-serif", // Changed font family
   },
   image: {
     width: "100%",
     height: "80vh",
+    opacity: 0.9, // Added opacity
   },
   socialContainer: {
     display: "flex",
@@ -147,7 +148,7 @@ const styles = {
     width: "50px",
     height: "auto",
     marginBottom: "1rem",
-    paddingBottom:'4rem', 
+    paddingBottom: "4rem",
   },
   socialLinks: {
     display: "flex",
@@ -159,7 +160,7 @@ const styles = {
     color: "#666",
     margin: "10px",
     textDecoration: "none",
-    color:'red',
+    color: "red",
   },
 };
 
