@@ -1,11 +1,25 @@
 import React from "react";
 import CHPImage from "./assets/chp.jpg";
+import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import "./App.css";
 
 class MaintenancePage extends React.Component {
   render() {
     return (
       <div style={styles.container}>
         <div style={styles.contentContainer}>
+          <div style={styles.socialContainer}>
+            <a href="https://facebook.com" style={styles.socialLink}>
+              <FaFacebook />
+            </a>
+            <a href="https://twitter.com" style={styles.socialLink}>
+              <FaTwitter />
+            </a>
+            <a href="https://linkedin.com" style={styles.socialLink}>
+              <FaLinkedin />
+            </a>
+            <div style={styles.divider}></div> {/* Vertical line */}
+          </div>
           <div style={styles.textContainer}>
             <h1 style={styles.heading}>Website Under Maintenance</h1>
             <p style={styles.text}>
@@ -29,37 +43,32 @@ class MaintenancePage extends React.Component {
 const styles = {
   container: {
     display: "flex",
-    // justifyContent: "center",
-    // alignItems: "center",
+    justifyContent: "center",
+    alignItems: "center",
     padding: "20px",
     maxWidth: "100%",
     height: "100vh",
-    // backgroundColor: "#f2f2f2", // Set a background color
   },
   contentContainer: {
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
     maxWidth: "100%",
     width: "100%",
   },
   textContainer: {
     flex: 1,
-    backgroundColor: "rgba(255, 255, 255, 0.9)", // Slightly transparent white background
+    backgroundColor: "rgba(255, 255, 255, 0.9)",
     padding: "3rem",
-    // textAlign: "center",
-    borderRadius: "5px",
-    // boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
     width: "100%",
     height: "100%",
-    // justifyContent: "center",
-    // alignItems: "center",
+  },
+  divider: {
+    width: "2px", // Adjust the width of the divider
+    backgroundColor: "#666", // Color of the divider
+    margin: "0 1rem", // Add some margin for spacing
   },
   imageContainer: {
     flex: 1,
     display: "flex",
-    // justifyContent: "center",
-    // alignItems: "center",
     width: "100%",
     height: "80vh",
   },
@@ -70,9 +79,8 @@ const styles = {
     marginBottom: "20px",
     marginTop: "6rem",
     textAlign: "center",
-    fontStyle: "italic", 
+    fontStyle: "italic",
     fontFamily: "Poppins, sans-serif",
-    
   },
   text: {
     fontSize: "18px",
@@ -83,6 +91,17 @@ const styles = {
   image: {
     width: "100%",
     height: "auto",
+  },
+  socialContainer: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  socialLink: {
+    fontSize: "24px",
+    color: "#666",
+    margin: "10px",
+    textDecoration: "none",
   },
 };
 

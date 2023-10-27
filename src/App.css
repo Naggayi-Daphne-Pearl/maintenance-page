@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .textContainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .imageContainer {
+    display: block;
+  }
+}
