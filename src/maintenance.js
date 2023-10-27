@@ -1,7 +1,13 @@
 import React from "react";
 import CHPImage from "./assets/chp.jpg";
 import AppIcon from "./assets/adaptive-icon.png";
-import { FaFacebook, FaTwitter, FaLinkedin, FaMailBulk } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaMailBulk,
+  FaEnvelope,
+} from "react-icons/fa";
 import "./App.css";
 
 class MaintenancePage extends React.Component {
@@ -12,16 +18,23 @@ class MaintenancePage extends React.Component {
           <div style={styles.socialContainer}>
             <img src={AppIcon} alt="Logo" style={styles.logo} />
             <div style={styles.socialLinks}>
-              <a href="https://facebook.com" style={styles.socialLink}>
-                <FaMailBulk />
+              <a
+                href="https://www.linkedin.com/company/mobiklinicfoundation/"
+                style={styles.socialLink}
+              >
+                <FaEnvelope />
               </a>
-              <a href="https://facebook.com" style={styles.socialLink}>
-                <FaFacebook />
-              </a>
-              <a href="https://twitter.com" style={styles.socialLink}>
+
+              <a
+                href="https://twitter.com/i/flow/login?redirect_after_login=%2Fklinicuganda"
+                style={styles.socialLink}
+              >
                 <FaTwitter />
               </a>
-              <a href="https://linkedin.com" style={styles.socialLink}>
+              <a
+                href="https://www.linkedin.com/company/mobiklinicfoundation/"
+                style={styles.socialLink}
+              >
                 <FaLinkedin />
               </a>
             </div>
@@ -43,7 +56,7 @@ class MaintenancePage extends React.Component {
             </p>
             <p style={styles.text}>
               If you have any questions, please contact us at{" "}
-              <a href="mailto:support@example.com">support@example.com</a>.
+              <a href="c">on this email </a>.
             </p>
           </div>
           <div style={styles.imageContainer}>
@@ -80,8 +93,8 @@ const styles = {
     height: "100vh",
   },
   divider: {
-    width: "2px",
-    backgroundColor: "black",
+    width: "1px",
+    backgroundColor: "red",
     margin: "0 1rem",
     height: "90%",
     justifyContent: "center",
@@ -95,7 +108,7 @@ const styles = {
   heading: {
     fontSize: "25px",
     // fontWeight: "bold",
-    color: "#9CA1A6",
+    color: "red",
     marginBottom: "20px",
     marginTop: "3rem",
     // textAlign: "center",
@@ -105,7 +118,7 @@ const styles = {
   textError: {
     fontSize: "25px",
     // fontWeight: "bold",
-    // color: "red",
+    color: "#9CA1A6",
     marginBottom: "20px",
     marginTop: "3rem",
     // textAlign: "center",
@@ -128,12 +141,13 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginTop: "5rem",
+    marginTop: "2rem",
   },
   logo: {
     width: "50px",
     height: "auto",
     marginBottom: "1rem",
+    paddingBottom:'4rem', 
   },
   socialLinks: {
     display: "flex",
@@ -145,6 +159,7 @@ const styles = {
     color: "#666",
     margin: "10px",
     textDecoration: "none",
+    color:'red',
   },
 };
 
