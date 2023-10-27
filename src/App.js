@@ -4,7 +4,7 @@ import MaintenancePage from "./maintenance";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <MaintenancePage />
     </div>
   );
