@@ -31,10 +31,10 @@ const styles = {
     display: "flex",
     // justifyContent: "center",
     // alignItems: "center",
-    // padding: "20px",
+    padding: "20px",
     maxWidth: "100%",
     height: "100vh",
-    backgroundColor: "#f2f2f2", // Set a background color
+    // backgroundColor: "#f2f2f2", // Set a background color
   },
   contentContainer: {
     display: "flex",
@@ -49,7 +49,7 @@ const styles = {
     padding: "3rem",
     // textAlign: "center",
     borderRadius: "5px",
-    boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+    // boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
     width: "100%",
     height: "100%",
     // justifyContent: "center",
@@ -61,7 +61,7 @@ const styles = {
     // justifyContent: "center",
     // alignItems: "center",
     width: "100%",
-    height: "100%",
+    height: "80vh",
   },
   heading: {
     fontSize: "24px",
