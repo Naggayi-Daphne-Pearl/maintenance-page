@@ -1,6 +1,7 @@
 import React from "react";
 import CHPImage from "./assets/chp.jpg";
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import AppIcon from "./assets/adaptive-icon.png";
+import { FaFacebook, FaTwitter, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import "./App.css";
 
 class MaintenancePage extends React.Component {
@@ -9,16 +10,22 @@ class MaintenancePage extends React.Component {
       <div style={styles.container}>
         <div style={styles.contentContainer}>
           <div style={styles.socialContainer}>
-            <a href="https://facebook.com" style={styles.socialLink}>
-              <FaFacebook />
-            </a>
-            <a href="https://twitter.com" style={styles.socialLink}>
-              <FaTwitter />
-            </a>
-            <a href="https://linkedin.com" style={styles.socialLink}>
-              <FaLinkedin />
-            </a>
-            <div style={styles.divider}></div> {/* Vertical line */}
+            <img src={AppIcon} alt="Logo" style={styles.logo} />
+            <div style={styles.socialLinks}>
+              <a href="https://facebook.com" style={styles.socialLink}>
+                <FaMailBulk />
+              </a>
+              <a href="https://facebook.com" style={styles.socialLink}>
+                <FaFacebook />
+              </a>
+              <a href="https://twitter.com" style={styles.socialLink}>
+                <FaTwitter />
+              </a>
+              <a href="https://linkedin.com" style={styles.socialLink}>
+                <FaLinkedin />
+              </a>
+            </div>
+            <div style={styles.divider}></div>
           </div>
           <div style={styles.textContainer}>
             <h1 style={styles.heading}>Website Under Maintenance</h1>
@@ -51,6 +58,7 @@ const styles = {
   },
   contentContainer: {
     display: "flex",
+    flexWrap: "wrap",
     maxWidth: "100%",
     width: "100%",
   },
@@ -59,25 +67,25 @@ const styles = {
     backgroundColor: "rgba(255, 255, 255, 0.9)",
     padding: "3rem",
     width: "100%",
-    height: "100%",
   },
   divider: {
-    width: "2px", // Adjust the width of the divider
-    backgroundColor: "#666", // Color of the divider
-    margin: "0 1rem", // Add some margin for spacing
+    width: "2px",
+    backgroundColor: "black",
+    margin: "0 1rem",
+    display: "block",
   },
   imageContainer: {
     flex: 1,
     display: "flex",
     width: "100%",
-    height: "80vh",
+    height: "60vh",
   },
   heading: {
     fontSize: "24px",
     fontWeight: "bold",
     color: "#333",
     marginBottom: "20px",
-    marginTop: "6rem",
+    marginTop: "3rem",
     textAlign: "center",
     fontStyle: "italic",
     fontFamily: "Poppins, sans-serif",
@@ -93,6 +101,16 @@ const styles = {
     height: "auto",
   },
   socialContainer: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  logo: {
+    width: "50px",
+    height: "auto",
+    marginBottom: "1rem",
+  },
+  socialLinks: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
